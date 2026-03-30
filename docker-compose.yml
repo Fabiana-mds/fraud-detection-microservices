@@ -1,0 +1,24 @@
+version: '3.8'
+
+services:
+  # Banco de dados para o Microserviço de Contas (Account Service)
+  db-accounts:
+    image: postgres:15
+    container_name: db-accounts
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=db_accounts
+    ports:
+      - "5431:5432" # Note que no seu PC acessaremos pela porta 5431
+
+  # Banco de dados para o Microserviço de Transações (Transaction Service)
+  db-transactions:
+    image: postgres:15
+    container_name: db-transactions
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=admin
+      - POSTGRES_DB=db_transactions
+    ports:
+      - "5432:5432" # Porta padrão
