@@ -5,8 +5,8 @@ import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 
-// AQUI ESTÁ O TRUQUE: Adicione o url = "http://localhost:8080"
-@FeignClient(name = "account-service", url = "http://localhost:8080")
+
+@FeignClient(name = "account-service")
 public interface AccountClient {
 
     @GetMapping("/accounts/{id}/risk-profile")
