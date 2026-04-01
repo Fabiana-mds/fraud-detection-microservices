@@ -1,8 +1,9 @@
 package com.projetofmds.transaction_service.dto;
 
-public record RiskProfileDTO(
+import java.math.BigDecimal;
 
+public record RiskProfileDTO(
     Long accountId,
-    String riskStatus,
-    Double currentBalance
+    BigDecimal baseRiskScore, // O campo que estava faltando!
+    String riskStatus
 ) {}

@@ -39,7 +39,7 @@ public class AccountService {
 
         return new RiskProfileDTO(
             account.getId(),
-            account.getCostumerName(),
+            account.getCustomerName(),
             account.getBaseRiskScore(),
             status
         );

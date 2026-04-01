@@ -22,8 +22,8 @@ public class Account {
     @Column(nullable = false, unique = true)
     private String accountNumber;
 
-    @Column(nullable = false)
-    private String costumerName;
+    @Column(name = "costumer_name", nullable = false)
+    private String customerName;
 
     @Column(nullable = false)
     private BigDecimal baseRiskScore;

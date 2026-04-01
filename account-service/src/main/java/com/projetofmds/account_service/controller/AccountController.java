@@ -20,7 +20,7 @@ public class AccountController {
 
     @PostMapping
     public Account createAccount(@RequestBody Account account) {
-        log.info("Criando nova conta para o cliente: {}", account.getCostumerName());
+        log.info("Criando nova conta para o cliente: {}", account.getCustomerName());
         return accountService.createAccount(account);
     }
 
