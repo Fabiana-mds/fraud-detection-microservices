@@ -1,5 +1,11 @@
 # 🛡️ Fraud Detection System (Microservices)
 
+![Java](https://img.shields.io/badge/Java-21-orange?style=for-the-badge&logo=openjdk)
+![Spring](https://img.shields.io/badge/Spring_Boot-3.2-6DB33F?style=for-the-badge&logo=springboot)
+![Postgres](https://img.shields.io/badge/PostgreSQL-16-blue?style=for-the-badge&logo=postgresql)
+![JUnit](https://img.shields.io/badge/JUnit-Tests-green?style=for-the-badge&logo=junit5)
+![Docker](https://img.shields.io/badge/Docker-Enabled-blue?style=for-the-badge&logo=docker)
+
 Sistema distribuído de detecção de fraudes em transações financeiras em tempo real, baseado em arquitetura de microserviços, com foco em escalabilidade, resiliência e boas práticas de mercado.
 
 ---
